@@ -47,7 +47,5 @@ public class Kruskals_Algo {
         }
         Edge mst[] = KruskalsAlgorithm(edges, v);
         s.close();
-        // Hello world
-        // Wassup man
     }
 }
