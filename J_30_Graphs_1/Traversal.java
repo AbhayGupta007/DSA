@@ -134,6 +134,5 @@ public class Traversal {
         int arr1[][] = {{0,1}, {1,0}};
         DF_Traversal(arr);  System.out.println();
         BF_Traversal(arr1);
-        // DF_Traversal(arr);
     }
 }
