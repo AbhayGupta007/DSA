@@ -28,7 +28,6 @@ public class Kruskals_Algo {
         while(count != n-1)
         {
             Edge currentedge = edges[i++];
-
         }
         return mst;
     }
