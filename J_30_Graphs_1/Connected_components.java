@@ -5,18 +5,10 @@ import java.util.*;
 public class Connected_components {
     public static void printpath(int arr[][])
 	{
-		Boolean isvisited[] = new Boolean[arr.length];
-		for(int i = 0; i<arr.length; i++)
-		{
-			isvisited[i] = false;
-		}
+		boolean isvisited[] = new boolean[arr.length];
 		for(int i = 0; i< arr.length; i++)
 		{
-			if(isvisited[i])
-			{
-				continue;
-			}
-			else
+			if(!isvisited[i])
 			{
 				ArrayList<Integer> ans = helper_BFS(arr, i, isvisited);
 				Collections.sort(ans);
@@ -28,7 +20,7 @@ public class Connected_components {
 			}
 		}
 	}
-	public static ArrayList<Integer> helper_BFS(int arr[][], int currentvertex, Boolean isvisited[])
+	public static ArrayList<Integer> helper_BFS(int arr[][], int currentvertex, boolean isvisited[])
     {
         ArrayList<Integer> ans = new ArrayList<>();
 		isvisited[currentvertex] = true;
