@@ -46,7 +46,7 @@ public class Traversal {
 		{
 			if(!map.containsKey(i))
 			{
-                DF_helper(arr, 0, map);
+                DF_helper(arr, i, map);
 			}
 		}
     }
