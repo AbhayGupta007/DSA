@@ -15,14 +15,10 @@ public class HasPath{
         {
             return true;
         }
-        Boolean isvisited[] = new Boolean[arr.length];
-        for(int i = 0;i < arr.length; i++)
-        {
-            isvisited[i] = false;
-        }
+        boolean isvisited[] = new boolean[arr.length];
         return helper_BF(arr,isvisited, s, d);
     }
-    public static Boolean helper_BF(int arr[][], Boolean isvisited[], int currentvertex, int destinationvertex)
+    public static Boolean helper_BF(int arr[][], boolean isvisited[], int currentvertex, int destinationvertex)
     {
         isvisited[currentvertex] = true;
         Queue<Integer> q = new LinkedList<>();
@@ -51,14 +47,10 @@ public class HasPath{
         {
             return true;
         }
-        Boolean isvisited[] = new Boolean[arr.length];
-        for(int i = 0;i < arr.length; i++)
-        {
-            isvisited[i] = false;
-        }
+        boolean isvisited[] = new boolean[arr.length];
         return helper(arr,isvisited, s, d);
     }
-    public static Boolean helper(int arr[][], Boolean isvisited[], int currentvertex, int destinationvertex)
+    public static Boolean helper(int arr[][], boolean isvisited[], int currentvertex, int destinationvertex)
     {
         if(currentvertex == destinationvertex)
         {
