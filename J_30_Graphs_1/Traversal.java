@@ -65,11 +65,7 @@ public class Traversal {
 
     public static void BF_Traversal(int arr[][])
 	{
-		Boolean isvisited[] = new Boolean[arr.length];
-		for(int i = 0; i< arr.length ; i++)
-        {
-            isvisited[i] = false;
-        }
+		boolean isvisited[] = new boolean[arr.length];
 		for(int i = 0; i<arr.length; i++)
 		{
 			if(!isvisited[i])
@@ -78,7 +74,7 @@ public class Traversal {
 			}
 		}
 	}
-	public static void BF_helper(int arr[][], int currentvertex, Boolean isvisited[])
+	public static void BF_helper(int arr[][], int currentvertex, boolean isvisited[])
 	{
 		Queue<Integer> q = new LinkedList<>();
 		q.add(currentvertex);
