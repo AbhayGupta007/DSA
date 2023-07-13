@@ -7,8 +7,8 @@ public class isConnected {
     {
         boolean isvisited[] = new boolean[arr.length];
         BF_traversal(arr, isvisited);
-        Boolean ans = true;
-        for(Boolean i : isvisited)
+        boolean ans = true;
+        for(boolean i : isvisited)
         {
             if(i)
             {
