@@ -64,7 +64,7 @@ public class GetPath {
 					if(i == destinationvertex)
                 	{
                     	map.put(i, currentvertex);
-                    	temp = destinationvertex;
+                    	temp = i;
                     	break;
                 	}
 					else
