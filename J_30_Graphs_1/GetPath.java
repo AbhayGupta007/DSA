@@ -14,8 +14,7 @@ public class GetPath {
         return helper_DFS(arr, isvisited, s, d);
     }
 
-    public static ArrayList<Integer> helper_DFS(int arr[][], Boolean isvisited[], int currentvertex,
-            int destinationvertex) {
+    public static ArrayList<Integer> helper_DFS(int arr[][], Boolean isvisited[], int currentvertex, int destinationvertex) {
         if (currentvertex == destinationvertex) {
             ArrayList<Integer> ans = new ArrayList<>();
             ans.add(currentvertex);
