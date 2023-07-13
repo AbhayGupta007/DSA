@@ -5,11 +5,7 @@ import java.util.*;
 public class isConnected {
     public static Boolean isconnected(int arr[][])
     {
-        Boolean isvisited[] = new Boolean[arr.length];
-        for(int i = 0; i < arr.length; i++)
-        {
-            isvisited[i] = false;
-        }
+        boolean isvisited[] = new boolean[arr.length];
         BF_traversal(arr, isvisited);
         Boolean ans = true;
         for(Boolean i : isvisited)
@@ -25,7 +21,7 @@ public class isConnected {
         }
         return ans;
     }
-    public static void BF_traversal(int arr[][], Boolean isvisited[])
+    public static void BF_traversal(int arr[][], boolean isvisited[])
     {
         Queue<Integer> q = new LinkedList<>();
         q.add(0);
