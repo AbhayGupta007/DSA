@@ -40,26 +40,34 @@ public class Traversal {
     // Coding ninjas method.
     public static void DF_Traversal(int arr[][])
     {
-        HashMap<Integer, Boolean> map = new HashMap<>();
-        map.put(0, true);
-        System.out.print(arr[0][0]+" ");
-        for(int i = 0; i<arr.length; i++)
-		{
-			if(!map.containsKey(i))
-			{
-                DF_helper(arr, i, map);
-			}
-		}
+        int flag = 0;
+        boolean isvisited[] = new boolean[arr.length] ;
+        for(int i = 0; i< arr.length; i++)
+        {
+            if(!isvisited[i])
+            {
+                if(flag == 0)
+                {
+                    DF_helper(arr, 0, isvisited);
+                    flag = 1;
+                }
+                else
+                {
+                    System.out.println();
+                    DF_helper(arr, 0, isvisited);
+                }
+            }
+        }
     }
-    public static void DF_helper(int arr[][], int currentvertex, HashMap<Integer, Boolean> map)
+    public static void DF_helper(int arr[][], int currentvertex,boolean isvisited[])
     {
         System.out.print(currentvertex+" ");
-        map.put(currentvertex, true);
-        for(int i =0; i < arr.length;i++)
+        isvisited[currentvertex] = true;
+        for(int i = 0; i < arr.length;i++)
         {
-            if(arr[currentvertex][i] == 1 && !map.containsKey(i))
+            if(arr[currentvertex][i] == 1 && !isvisited[i])
             { 
-                DF_helper(arr, i, map);
+                DF_helper(arr, i, isvisited);
             }
         }
     }
