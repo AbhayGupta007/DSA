@@ -7,14 +7,12 @@ public class GetPath {
         if (s >= arr.length || d >= arr.length) {
             return null;
         }
-        Boolean isvisited[] = new Boolean[arr.length];
-        for (int i = 0; i < arr.length; i++) {
-            isvisited[i] = false;
-        }
+        boolean isvisited[] = new boolean[arr.length];
+        
         return helper_DFS(arr, isvisited, s, d);
     }
 
-    public static ArrayList<Integer> helper_DFS(int arr[][], Boolean isvisited[], int currentvertex, int destinationvertex) {
+    public static ArrayList<Integer> helper_DFS(int arr[][], boolean isvisited[], int currentvertex, int destinationvertex) {
         if (currentvertex == destinationvertex) {
             ArrayList<Integer> ans = new ArrayList<>();
             ans.add(currentvertex);
@@ -38,14 +36,11 @@ public class GetPath {
         if (s >= arr.length || d >= arr.length) {
             return null;
         }
-        Boolean isvisited[] = new Boolean[arr.length];
-        for (int i = 0; i < arr.length; i++) {
-            isvisited[i] = false;
-        }
+        boolean isvisited[] = new boolean[arr.length];
         return helper_BFS(arr, s, d, isvisited);
     }
 
-    public static ArrayList<Integer> helper_BFS(int arr[][], int currentvertex, int destinationvertex, Boolean isvisited[])
+    public static ArrayList<Integer> helper_BFS(int arr[][], int currentvertex, int destinationvertex, boolean isvisited[])
     {
         HashMap<Integer,Integer> map = new HashMap<>();
         Queue<Integer> q = new LinkedList<>();
