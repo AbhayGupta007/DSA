@@ -46,16 +46,8 @@ public class Traversal {
         {
             if(!isvisited[i])
             {
-                if(flag == 0)
-                {
-                    DF_helper(arr, 0, isvisited);
-                    flag = 1;
-                }
-                else
-                {
-                    System.out.println();
-                    DF_helper(arr, 0, isvisited);
-                }
+                DF_helper(arr, 0, isvisited);
+                System.out.println();    
             }
         }
     }
@@ -80,6 +72,7 @@ public class Traversal {
 			if(!isvisited[i])
 			{
 				BF_helper(arr, i, isvisited);
+                System.out.println();
 			}
 		}
 	}
