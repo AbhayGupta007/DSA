@@ -42,6 +42,7 @@ public class Traversal {
     {
         HashMap<Integer, Boolean> map = new HashMap<>();
         map.put(0, true);
+        System.out.print(arr[0][0]+" ");
         for(int i = 0; i<arr.length; i++)
 		{
 			if(!map.containsKey(i))
