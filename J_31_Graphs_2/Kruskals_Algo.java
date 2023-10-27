@@ -45,7 +45,7 @@ public class Kruskals_Algo {
         return mst;
     }
 
-    // My Method.
+    // My Method.(Union Find Algo)
     public static int findParent(int currentEdge, int parent[])
     {
         while(parent[currentEdge] != currentEdge)
@@ -54,7 +54,7 @@ public class Kruskals_Algo {
         }
         return currentEdge;
     }
-    // Coding Ninja's Method.
+    // Coding Ninja's Method. (Union Find Algo)
     public static int findParent1(int currentEdge, int parent[])
     {
         if(currentEdge == parent[currentEdge])
