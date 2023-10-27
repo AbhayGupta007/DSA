@@ -63,7 +63,7 @@ public class Kruskals_Algo {
         }
         return findParent1(parent[currentEdge], parent);
     }
-    
+
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int v = s.nextInt();
@@ -78,6 +78,17 @@ public class Kruskals_Algo {
             edges[i] = edge;
         }
         Edge mst[] = KruskalsAlgorithm(edges, v);
+        System.out.println("Your final MST is -: ");
+        for(int i = 0; i < mst.length; i++)
+        {
+            if(mst[i].v1 > mst[i].v2)
+            {
+                System.out.println(mst[i].v2 +" "+ mst[i].v1 + " " + mst[i].weight);
+            }
+            else{
+                System.out.println(mst[i].v1 +" "+ mst[i].v2 + " " + mst[i].weight);
+            }
+        }
         s.close();
     }
 }
