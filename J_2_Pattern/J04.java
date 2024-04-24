@@ -1,4 +1,4 @@
-//Program to print iinverted pattern of numbers.
+//Program to print inverted pattern of numbers.
 
 package J_2_Pattern;
 import java.util.Scanner;
