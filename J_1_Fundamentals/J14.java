@@ -11,7 +11,7 @@ public class J14 {
         
         System.out.print("Enter first number: ");
         int a = s.nextInt();
-        System.out.print("Enter first number: ");
+        System.out.print("Enter second number: ");
         int b = s.nextInt();
         int gcd = 1;
         
