@@ -1,4 +1,4 @@
-// Crating and printing Jagged arrays.
+// Creating and printing Jagged arrays.
 
 package J_5_Arrays_2D;
 
