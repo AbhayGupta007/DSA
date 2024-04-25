@@ -1,4 +1,4 @@
-//Program to finde Odd one out.
+//Program to find Odd one out.
 
 package J_4_Arrays;
 
